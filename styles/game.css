@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(44, 43, 43, 0.226);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 90%;
+    max-width: 500px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 30px auto;
+}
+
+.cell {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    height: 100px;
+    font-size: 2.5em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    aspect-ratio: 1;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 30px rgba(0, 255, 255, 0.6);
+}
+
+.cell.win {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.status {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0px 4px 20px rgba(0, 255, 255, 0.8);
+}
+/* Additional game-specific styles */
+.game-header {
+    margin-bottom: 2rem;
+}
+
+.players {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.board {
+    margin: 2rem auto;
+}
+
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#home-button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    margin-top: 2rem;
+}
+
+.vs {
+    margin: 0 1rem;
+    color: #00ffff;
+    text-shadow: 0px 2px 8px rgba(0, 255, 255, 0.8);
+}
+/* Add these styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.players {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.status {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+#home-button {
+    background: linear-gradient(90deg, #7c78a1, #f1f5ff);
+    padding: 15px 40px;
+    font-size: 1.2em;
+    margin-top: 2rem;
+    order: 3; /* Ensures proper ordering */
+}
+
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Score display styling */
+.score-display {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #00ffff;
+    text-shadow: 0px 2px 8px rgba(0, 255, 255, 0.6);
+}
+#restart-game {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    background: linear-gradient(90deg, #7c78a1, #f1f5ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#restart-game:hover {
+    transform: translateY(-3px);
+}
+
+.hidden {
+    display: none;
+}

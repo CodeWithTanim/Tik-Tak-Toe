@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik-Tak-Toe Game</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1 class="title" id="game-title">Tik-Tak-Toe</h1>
+            <div class="players" id="players-display"></div>
+        </div>
+
+        <div class="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <div class="game-controls">
+            <p class="status" id="status"></p>
+            <button id="restart-game" class="hidden">Restart Game</button>
+            <!-- Keep the existing HTML structure, just add the home button class -->
+            <button id="home-button" class="menu-button">🏠 Go to Homepage</button>
+
+        </div>
+    </div>
+    <script src="scripts/game.js"></script>
+</body>
+
+</html>
