@@ -1,4 +1,4 @@
-<!--- Banner Section --->
+<!-- Banner Section -->
 <p align="center">
     <img src="https://github.com/CodeWithTanim/README-MANAGER/blob/main/0_7Q3yvSIv_t0ioJ-Z.gif" alt="Tic-Tac-Toe">
 </p>
